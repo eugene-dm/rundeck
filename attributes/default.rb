@@ -15,6 +15,7 @@ default['rundeck']['restart_on_config_change'] = false
 default['rundeck']['log_dir'] = '/var/log/chef-rundeck'
 
 # web server configuration
+default['rundeck']['apache'] = true
 default['rundeck']['apache-template']['cookbook'] = 'rundeck'
 default['rundeck']['use_ssl'] = false
 default['rundeck']['cert']['name'] = node['rundeck']['hostname']
