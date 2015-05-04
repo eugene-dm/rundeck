@@ -245,6 +245,7 @@ if node['rundeck']['apache']
 end
 
 service 'rundeckd' do
+  provider Chef::Provider::Service::Upstart
   action :start
 end
 
